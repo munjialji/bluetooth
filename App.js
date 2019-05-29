@@ -1,7 +1,5 @@
-
 import React, { Component } from 'react';
 import {
-  
   StyleSheet,
   Text,
   View,
@@ -11,17 +9,11 @@ import {
   TouchableOpacity,
   ToastAndroid
 } from 'react-native';
-var _ = require('lodash');
 import BluetoothSerial from 'react-native-bluetooth-serial';
+import _ from 'lodash';
 
 
-const Value = ({name, value}) => (
-  <View style={styles.valueContainer}>
-    <Text>{name}:</Text>
-    <Text>{new String(value).substr(0, 8)}</Text>
-  </View>
-)
-export default class App extends Component<{}>  {
+export default class App extends Component {
   bt = BluetoothSerial;
   constructor (props) {
     super(props)
