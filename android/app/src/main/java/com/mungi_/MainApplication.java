@@ -5,7 +5,6 @@ import android.app.Application;
 import com.facebook.react.ReactApplication;
 import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
-import com.sensors.RNSensorsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.rusel.RCTBluetoothSerial.RCTBluetoothSerialPackage;
@@ -36,7 +35,6 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new SvgPackage(),
             new AsyncStoragePackage(),
-            new RNSensorsPackage(),
             new RNGestureHandlerPackage(),
             new VectorIconsPackage(),
             new RCTBluetoothSerialPackage()
